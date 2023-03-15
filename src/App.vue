@@ -1,6 +1,11 @@
-<script setup>
-import { RouterView } from 'vue-router';
-
+<script>
+export default {
+  methods: {
+    redirectTo() {
+      this.$router.push({ name: 'Foo', params: { id: 123312 } })
+    }
+  }
+}
 
 </script>
 
@@ -9,6 +14,8 @@ import { RouterView } from 'vue-router';
     <router-view></router-view>
     <router-link to="/foo">To Foo</router-link>
     <router-link to="/bar">To Bar</router-link>
+
+    <button @click="redirectTo">Click</button>
   </div>
 </template>
 

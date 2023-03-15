@@ -8,7 +8,7 @@ import Home from './components/Home.vue'
 const routes = [
 
     { path: '/', component: Home },
-    { path: '/foo', component: Foo },
+    { path: '/foo/:id', name: 'Foo', component: Foo },
     { path: '/bar', component: Bar },
     { path: '/:pathMatch(.*)*', component: ErrorNotFound }
 
