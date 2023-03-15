@@ -6,7 +6,9 @@ import { RouterView } from 'vue-router';
 
 <template>
   <div>
-    <router-view>    </router-view>
+    <router-view></router-view>
+    <router-link to="/foo">To Foo</router-link>
+    <router-link to="/bar">To Bar</router-link>
   </div>
 </template>
 
